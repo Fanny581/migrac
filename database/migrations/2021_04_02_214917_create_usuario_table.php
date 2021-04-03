@@ -18,7 +18,8 @@ class CreateUsuarioTable extends Migration
             $table->string('nombre',50);
             $table->string('direccion',50);
             $table->string('telefono',20);
-        
+            $table->softDeletes(); 
+            $table->timestamps();
         });
     }
 
